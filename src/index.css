@@ -6,59 +6,65 @@
 
 @layer base {
   :root {
-    --background: 216 40% 7%;
-    --foreground: 0 0% 100%;
+    --background: 200 25% 8%;
+    --foreground: 45 10% 95%;
 
-    --card: 213 37% 10%;
-    --card-foreground: 0 0% 100%;
+    --card: 195 22% 11%;
+    --card-foreground: 45 10% 95%;
 
-    --popover: 213 37% 10%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 195 22% 11%;
+    --popover-foreground: 45 10% 95%;
 
-    --primary: 195 100% 47%;
-    --primary-foreground: 216 40% 7%;
+    --primary: 175 60% 38%;
+    --primary-foreground: 200 25% 6%;
 
-    --secondary: 210 18% 20%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 85 25% 20%;
+    --secondary-foreground: 45 10% 90%;
 
-    --muted: 213 20% 15%;
-    --muted-foreground: 210 15% 60%;
+    --muted: 195 18% 15%;
+    --muted-foreground: 190 12% 55%;
 
-    --accent: 195 100% 47%;
-    --accent-foreground: 216 40% 7%;
+    --accent: 42 75% 50%;
+    --accent-foreground: 200 25% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 72% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 213 20% 18%;
-    --input: 213 20% 18%;
-    --ring: 195 100% 47%;
+    --border: 190 18% 18%;
+    --input: 190 18% 18%;
+    --ring: 175 60% 38%;
 
     --radius: 0.5rem;
 
-    --navy-deep: 210 60% 12%;
-    --navy-dark: 216 40% 7%;
-    --steel: 210 18% 30%;
-    --neon-blue: 195 100% 47%;
-    --neon-blue-glow: 195 100% 47% / 0.3;
+    --navy-deep: 210 45% 12%;
+    --navy-dark: 200 25% 8%;
+    --steel: 195 15% 28%;
+    --olive: 85 25% 20%;
+    --olive-light: 80 20% 35%;
+    --tactical-teal: 175 60% 38%;
+    --command-gold: 42 75% 50%;
+    --command-gold-glow: 42 75% 50% / 0.3;
 
     --font-display: 'Rajdhani', sans-serif;
     --font-body: 'Inter', sans-serif;
 
-    --gradient-navy: linear-gradient(135deg, hsl(216 40% 7%), hsl(210 60% 12%));
-    --gradient-card: linear-gradient(145deg, hsl(213 37% 12%), hsl(213 37% 8%));
-    --gradient-accent: linear-gradient(135deg, hsl(195 100% 47%), hsl(200 100% 35%));
-    --shadow-neon: 0 0 20px hsl(195 100% 47% / 0.2), 0 0 40px hsl(195 100% 47% / 0.1);
+    --gradient-navy: linear-gradient(135deg, hsl(200 25% 8%), hsl(210 45% 12%));
+    --gradient-card: linear-gradient(145deg, hsl(195 22% 13%), hsl(195 22% 9%));
+    --gradient-accent: linear-gradient(135deg, hsl(175 60% 38%), hsl(180 55% 28%));
+    --gradient-olive: linear-gradient(135deg, hsl(85 25% 20%), hsl(90 30% 15%));
+    --gradient-command: linear-gradient(135deg, hsl(42 75% 50%), hsl(38 80% 40%));
+    --shadow-neon: 0 0 20px hsl(175 60% 38% / 0.2), 0 0 40px hsl(175 60% 38% / 0.1);
+    --shadow-gold: 0 0 20px hsl(42 75% 50% / 0.15), 0 0 40px hsl(42 75% 50% / 0.08);
     --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.3);
 
-    --sidebar-background: 216 40% 7%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 195 100% 47%;
-    --sidebar-primary-foreground: 216 40% 7%;
-    --sidebar-accent: 213 20% 15%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 213 20% 18%;
-    --sidebar-ring: 195 100% 47%;
+    --sidebar-background: 200 25% 8%;
+    --sidebar-foreground: 45 10% 95%;
+    --sidebar-primary: 175 60% 38%;
+    --sidebar-primary-foreground: 200 25% 6%;
+    --sidebar-accent: 195 18% 15%;
+    --sidebar-accent-foreground: 45 10% 95%;
+    --sidebar-border: 190 18% 18%;
+    --sidebar-ring: 175 60% 38%;
   }
 }
 
@@ -107,18 +113,34 @@
   }
 
   .text-glow {
-    text-shadow: 0 0 20px hsl(195 100% 47% / 0.5);
+    text-shadow: 0 0 20px hsl(175 60% 38% / 0.5);
+  }
+
+  .text-glow-gold {
+    text-shadow: 0 0 20px hsl(42 75% 50% / 0.4);
   }
 
   .border-glow {
-    border-color: hsl(195 100% 47% / 0.3);
+    border-color: hsl(175 60% 38% / 0.3);
   }
 
   .bg-grid-pattern {
     background-image: 
-      linear-gradient(hsl(195 100% 47% / 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, hsl(195 100% 47% / 0.03) 1px, transparent 1px);
+      linear-gradient(hsl(175 60% 38% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(175 60% 38% / 0.03) 1px, transparent 1px);
     background-size: 60px 60px;
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .gradient-olive {
+    background: var(--gradient-olive);
+  }
+
+  .gradient-command {
+    background: var(--gradient-command);
   }
 
   .backdrop-blur-nav {
@@ -168,10 +190,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(195 100% 47% / 0.3);
+  background: hsl(175 60% 38% / 0.3);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(195 100% 47% / 0.5);
+  background: hsl(175 60% 38% / 0.5);
 }

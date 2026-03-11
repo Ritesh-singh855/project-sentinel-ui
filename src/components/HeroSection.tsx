@@ -67,7 +67,7 @@ const HeroSection = () => {
         >
           <a
             href="#solutions"
-            className="px-8 py-3 gradient-accent text-accent-foreground font-display font-semibold text-lg tracking-wider uppercase rounded shadow-neon hover:shadow-[0_0_30px_hsl(195_100%_47%/0.4)] transition-all duration-300"
+            className="px-8 py-3 gradient-accent text-accent-foreground font-display font-semibold text-lg tracking-wider uppercase rounded shadow-neon hover:shadow-[0_0_30px_hsl(175_60%_38%/0.4)] transition-all duration-300"
           >
             Explore Solutions
           </a>
