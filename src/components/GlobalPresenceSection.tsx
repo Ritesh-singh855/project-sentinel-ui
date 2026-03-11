@@ -33,7 +33,7 @@ const GlobalPresenceSection = () => {
         {/* Map */}
         <div className="relative max-w-5xl mx-auto aspect-[2/1] rounded-lg border border-border bg-card/30 overflow-hidden">
           {/* Simple world map outline using SVG */}
-          <svg viewBox="0 0 1000 500" className="w-full h-full opacity-20" fill="none" stroke="hsl(195 100% 47%)" strokeWidth="0.5">
+          <svg viewBox="0 0 1000 500" className="w-full h-full opacity-20" fill="none" stroke="hsl(175 60% 38%)" strokeWidth="0.5">
             {/* Simplified continents */}
             <path d="M150,120 Q200,100 250,110 Q300,90 350,120 Q320,180 280,200 Q240,220 200,210 Q160,190 150,150 Z" />
             <path d="M120,220 Q160,200 200,220 Q230,280 210,340 Q180,380 150,360 Q120,320 110,280 Z" />
